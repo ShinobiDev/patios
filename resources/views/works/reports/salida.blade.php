@@ -33,7 +33,7 @@
               <th>Placa</th>
               <th>Causal</th>
               <th>N. Infracción</th>
-              <th>Identificacion Prop/Infrac</th>
+              <th>Identificación Prop/Infrac</th>
             </tr>
           </thead>
           <tbody>

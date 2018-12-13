@@ -10,7 +10,7 @@
 
     <ol class="breadcrumb">
       <li><a href="{{route('home')}}"><i class="fa fa-dashboard">  Inicio</i></a></li>
-      <li class="active">Usuaios</li>
+      <li class="active">Usuarios</li>
     </0l>
 
 @endsection
@@ -57,7 +57,7 @@
                     @can ('delete', $user)
                       <form method="POST" action="{{route('users.destroy', $user)}}" style="display: inline">
                         {{csrf_field()}} {{method_field('DELETE')}}
-                        <button class="btn btn-xs btn-danger" name="button" onclick="return confirm('¿Esta seguro de querer Eliminar  este usuraio?')">
+                        <button class="btn btn-xs btn-danger" name="button" onclick="return confirm('¿Está seguro de querer Eliminar  este usuraio?')">
                             <i class="fa fa-times"></i>
                         </button>
                       </form>

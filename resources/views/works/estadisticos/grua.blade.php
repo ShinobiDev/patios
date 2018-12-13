@@ -10,7 +10,7 @@
 
     <ol class="breadcrumb">
       <li><a href="{{route('home')}}"><i class="fa fa-dashboard">  Inicio</i></a></li>
-      <li class="active">Reporte Permanencia En patios</li>
+      <li class="active">Reporte Permanencia En Patios</li>
     </0l>
 
 @endsection
@@ -19,7 +19,7 @@
 
   <div class="box box-primary">
     <div class="box-header">
-        <h3 class="box-title">Reporte Permanencia en patios</h3>
+        <h3 class="box-title">Reporte permanencia en patios</h3>
 
 
 

@@ -10,7 +10,7 @@
 
     <ol class="breadcrumb">
       <li><a href="{{route('home')}}"><i class="fa fa-dashboard">  Inicio</i></a></li>
-      <li class="active">Salida  del Parqueadero</li>
+      <li class="active">Salida del Parqueadero</li>
     </0l>
 
 @endsection
@@ -19,7 +19,7 @@
 
   <div class="box box-primary">
     <div class="box-header">
-        <h3 class="box-title">Listados De Salida  del Parqueadero</h3>
+        <h3 class="box-title">Listados De Salida del Parqueadero</h3>
 
             <a href="{{route('salidas.create')}}" class="btn btn-primary pull-right btn-lg"  >
                 <i class="fa fa-plus"> Crear Salida </i>
@@ -54,7 +54,7 @@
                       <a href="{{route('salidas.edit', $salida)}}" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <form method="POST" action="{{route('rates.destroy', $salida)}}" style="display: inline">
                         {{csrf_field()}} {{method_field('DELETE')}}
-                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Esta seguro de querer Eliminar  este servicio?')">
+                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Está seguro de querer Eliminar  este servicio?')">
                             <i class="fa fa-trash"></i>
                         </button>
                       </form>

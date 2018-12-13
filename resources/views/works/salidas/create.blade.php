@@ -34,7 +34,7 @@
                             <label for="placa">Placa:</label>
 
                               <select class="form-control select2" name="entries_id" id="entries_id" required autofocus>
-                                <option value="">--- Selecione PLACA ---</option>
+                                <option value="">--- Seleccione PLACA ---</option>
                                 @foreach ($entries as $entry)
                                   <option value="{{$entry->id}}">{{$entry->placa}}</option>
                                 @endforeach
@@ -45,7 +45,7 @@
                         <div class="form-group">
                             <label for="nombre">Propietario o Infractor</label>
                             <select class="form-control select2" name="owenrs_id" id="documento" required autofocus>
-                                <option value="">--- Selecione Propi/Infractor ---</option>
+                                <option value="">--- Seleccione Propi/Infractor ---</option>
 
                               </select>
                             </select>

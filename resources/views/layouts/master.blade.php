@@ -164,6 +164,7 @@
           <div class="ajax-content">
           </div> --}}
           @include('partials.error')
+          @include('partials.errores')
           @include('partials.success')
 
           @yield('content')

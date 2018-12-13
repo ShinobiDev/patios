@@ -27,12 +27,12 @@
         <div class="col-md-3">
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <h3 class="box-title">Secciones De este patio </h3>
+                    <h3 class="box-title">Secciones de este patio </h3>
                 </div>
                 <div class="box-body">
                   <ul>
                   @foreach ($yard->sections as $section)
-                      <li class="list-group-item"><strong>Seccion: {{$section->seccion}}</strong> Rango: {{$section->rango}}</li>
+                      <li class="list-group-item"><strong>Sección: {{$section->seccion}}</strong> Rango: {{$section->rango}}</li>
                    @endforeach
                   </ul>
 
@@ -46,7 +46,7 @@
 
           <div class="box box-primary">
               <div class="box-header with-border">
-                  <h3 class="box-title">Crear Seccion</h3>
+                  <h3 class="box-title">Crear Sección</h3>
               </div>
               <div class="box-body">
                 <form method="POST" action="{{route('sections.store',$yard)}}">

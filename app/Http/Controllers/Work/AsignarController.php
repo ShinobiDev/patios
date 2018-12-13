@@ -62,7 +62,7 @@ class AsignarController extends Controller
 
 
 
-         return back()->with('success','Se a asignado ubicación al vehículo');
+         return back()->with('success','Se ha asignado ubicación al vehículo');
     }
 
     /**
@@ -121,7 +121,7 @@ class AsignarController extends Controller
 
         ]);
 
-        return redirect()->route('entries.index')->with('success', 'Se a realizado la Reubicacion Correctamente');
+        return redirect()->route('entries.show',$request['entries_id'])->with('success', 'Se ha realizado la reubicación correctamente');
 
     }
 

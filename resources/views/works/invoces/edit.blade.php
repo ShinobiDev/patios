@@ -34,7 +34,7 @@
                         <div class="form-group">
 
                           <select class="form-control" name="estado" required>
-                              <option value="">---Selecione opcion---</option>
+                              <option value="">---Seleccione opcion---</option>
                               <option value="Generado">Generado</option>
                               <option value="Anulado">Anulado</option>
                           </select>

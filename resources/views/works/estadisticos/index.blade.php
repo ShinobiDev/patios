@@ -53,7 +53,7 @@
             </div>
 
             <div class="form-group">
-                <label for="">Selecione Reporte</label>
+                <label for="">Seleccione Reporte</label>
                 <select class="form-control" name="reporte" required>
                     <option value="ingreso">Ingreso Vehiculos</option>
                     <option value="salida">Salida Vehiculos</option>

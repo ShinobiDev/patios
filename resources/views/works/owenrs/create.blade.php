@@ -48,22 +48,22 @@
                       </div>
 
                       <div class="form-group">
-                          <label for="telefono">Numero Celular:</label>
+                          <label for="telefono">Número Celular:</label>
                           <input type="text" name="celular" value="{{old('celular')}}" class="form-control">
                       </div>
                       <div class="form-group">
-                          <label for="mail">Correo Electronico</label>
+                          <label for="mail">Correo Electrónico:</label>
                           <input type="mail" name="mail" value="{{old('mail')}}" class="form-control">
                       </div>
 
                       <div class="form-group">
-                          <label for="direccion">Direccion Recidencia</label>
+                          <label for="direccion">Dirección Recidencia:</label>
                           <input type="text" name="direccion" value="{{old('direccion')}}" class="form-control">
                       </div>
 
                       <div class="form-group">
                         <select class="form-control select2" name="entries_id">
-                          <option value="">--- seleccion Placa</option>
+                          <option value="">--- seleccion placa ---</option>
                           @foreach ($entries as $entry)
                               <option value="{{$entry->id}}">{{$entry->placa}}</option>
                           @endforeach

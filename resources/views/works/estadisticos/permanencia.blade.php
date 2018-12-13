@@ -19,7 +19,7 @@
 
   <div class="box box-primary">
     <div class="box-header">
-        <h3 class="box-title">Reporte Permanencia en patios</h3>
+        <h3 class="box-title">Reporte Permanencia En Patios</h3>
 
 
 

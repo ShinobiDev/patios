@@ -31,7 +31,7 @@
                   {{csrf_field()}}
                   {{method_field('PUT')}}
                         <div class="form-group dynamic">
-                          <label for="">Selecione Patio </label>
+                          <label for="">Seleccione Patio </label>
                             <select class="form-control" name="nombre" id="yards" require>
                                 <option value="" disable='true' selected='true'>===Seleccione Patio====</option>
                                 @foreach ($yards as $key => $value)
@@ -41,7 +41,7 @@
                         </div>
 
                         <div class="form-group">
-                          <label for="">Selecione Sección </label>
+                          <label for="">Seleccione Sección </label>
 
                             <select class="form-control" name="seccion" id="seccion" require>
                                 <option value="" disable='true' selected='true'>===Seleccione Sección====</option>
@@ -50,10 +50,10 @@
                         </div>
 
                         <div class="form-group">
-                          <label for="">Selecione Numero </label>
+                          <label for="">Seleccione Número </label>
 
                             <select class="form-control" name="rango" id="rango" require>
-                                <option value="" disable='true' selected='true'>===Seleccione Numero====</option>
+                                <option value="" disable='true' selected='true'>===Seleccione Número====</option>
                             </select>
 
                         </div>
@@ -85,11 +85,11 @@
   $('#yards').on('change', function(e) {
       console.log(e);
       var yard_id =e.target.value;
-      $.get('/patios/json-seccion?yard_id='+yard_id, function(data){
+      $.get('{{config("app.url")}}/json-seccion?yard_id='+yard_id, function(data){
         $('#seccion').empty();
         $('#seccion').append('<option value="0" disable="true" selected="true">===Seleccione Sección====</option>');
         $('#rango').empty();
-        $('#rango').append('<option value="0" disable="true" selected="true">===Seleccione Numero====</option>');
+        $('#rango').append('<option value="0" disable="true" selected="true">===Seleccione Número====</option>');
 
         $.each(data, function(index, seccionObj){
           $('#seccion').append('<option value="'+seccionObj.id+'">'+seccionObj.seccion+'</option>')
@@ -103,9 +103,9 @@
   $('#seccion').on('change', function(e) {
       console.log(e);
       var seccion_id =e.target.value;
-      $.get('/patios/json-rango?seccion_id='+seccion_id, function(data){
+      $.get('{{config("app.url")}}/json-rango?seccion_id='+seccion_id, function(data){
         $('#rango').empty();
-        $('#rango').append('<option value="0" disable="true" selected="true">===Seleccione Numero====</option>');
+        $('#rango').append('<option value="0" disable="true" selected="true">===Seleccione Número====</option>');
 
         $.each(data, function(index, rangoObj){
           $('#rango').append('<option value="'+rangoObj.id+'">'+rangoObj.rango+'</option>')

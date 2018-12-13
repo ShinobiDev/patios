@@ -17,13 +17,13 @@
                 <b>Email</b> <a class="pull-right">{{$user->email}}</a>
               </li>
               <li class="list-group-item">
-                <b>Codigo</b> <a class="pull-right">{{$user->id}}</a>
+                <b>Código</b> <a class="pull-right">{{$user->id}}</a>
               </li>
               <li class="list-group-item">
                 <b>Cargo</b> <a class="pull-right">{{$user->cargo}}</a>
               </li>
               <li class="list-group-item">
-                <b>Codigo Caja</b> <a class="pull-right">{{$user->caja}}</a>
+                <b>Código Caja</b> <a class="pull-right">{{$user->caja}}</a>
               </li>
             </ul>
 

@@ -53,7 +53,7 @@ class OwenrController extends Controller
             'tipo_propi' => 'required',
             'documento'=>'required|unique:owenrs|min:5|max:20',
             // 'celular'=>'required',
-            // 'mail'=>'required',
+             'mail'=>'required|unique:owenrs',
             // 'direccion'=>'required',
             'entries_id'=>'required',
         ]);
@@ -64,7 +64,7 @@ class OwenrController extends Controller
 
         $owenrs = owenr::create($data);
 
-        return back()->with('success','Se a creado el propietario correctamente');
+        return back()->with('success','Se ha creado el propietario correctamente');
     }
 
     /**
@@ -117,7 +117,7 @@ class OwenrController extends Controller
 
       $owenr->update($data);
 
-      return redirect()->route('owenrs.index')->with('success', 'El propietario de actulizo correctamente');
+      return redirect()->route('owenrs.index')->with('success', 'El propietario de actualizo correctamente');
     }
 
     /**
@@ -133,6 +133,6 @@ class OwenrController extends Controller
       $this->authorize('delete', $owenr);
 
       $owenr->delete($id);
-      return redirect()->route('owenrs.index')->with('success', 'El registro fue borrdo correctamente');
+      return redirect()->route('owenrs.index')->with('success', 'El registro fue borrado correctamente');
     }
 }

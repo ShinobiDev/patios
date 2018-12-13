@@ -36,16 +36,16 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="grua">Servicio De Grua</label>
+                            <label for="grua">Servicio De Grúa</label>
                             <select class="form-control" name="crane_id">
-                                  <option value="">--Selecione un Servicio</option>
+                                  <option value="">--Seleccione un Servicio</option>
                                   @foreach ($cranes as $crane)
                                       <option value="{{$crane['id']}}">{{$crane['id']}}-{{$crane['servicio']}}</option>
                                   @endforeach
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="grua">Servicio De Parquadero</label>
+                            <label for="grua">Servicio De Parqueadero</label>
                             <select class="form-control" name="rate_id">
                                     <option value="">--Selecione un Servicio</option>
                                     @foreach ($rates as $rate)
@@ -54,7 +54,7 @@
                             </select>
                         </div>
                               <div class="form-group">
-                                  <label for="val_grua">Valor Grua :</label>
+                                  <label for="val_grua">Valor Grúa :</label>
                                   <input type="text" name="val_grua" value="{{old('val_grua')}}" class="form-control">
                              </div>
 

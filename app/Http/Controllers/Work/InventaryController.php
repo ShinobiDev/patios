@@ -43,25 +43,29 @@ class InventaryController extends Controller
       $arr = $request->except('_token');
 
       foreach ($arr as $key => $value) {
-        $newInventary = new Inventary();
-        if (! is_array( $value )) {
-          ($newValue = $value);
+        
+            $newInventary = new Inventary();
+            if (! is_array( $value )) {
+              ($newValue = $value);
 
-        } else {
-          $newValue = json_encode($value);
-        }
+            } else {
+              $newValue = json_encode($value);
+            }
 
-        $newInventary->entries_id = $entry->id;
-        $newInventary->title = $key;
-        $newInventary->opcion = $newValue;
+            $newInventary->entries_id = $entry->id;
+            $newInventary->title = $key;
+            $newInventary->opcion = $newValue;
 
 
 
-        $newInventary->save();
+            $newInventary->save();
 
-        $inventaryArray[] = $newInventary;
+            $inventaryArray[] = $newInventary;    
+        
+        
       };
         return redirect()->back()->with('success', 'Se agrego el inventario correctamente');
+
     }
 
     public function editarinventario(Request $request, Entry $entry)

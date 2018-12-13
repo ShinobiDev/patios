@@ -7,7 +7,7 @@
 
   <ol class="breadcrumb">
     <li><a href="{{route('home')}}"><i class="fa fa-dashboard">  Inicio</i></a></li>
-    <li class="active"><a href="{{route('rates.index')}}">Proveedor de Grua</a></li>
+    <li class="active"><a href="{{route('rates.index')}}">Proveedor de Grúa</a></li>
     <li class="active">Actulizar Proveedor de Grua</li>
   </0l>
 @endsection
@@ -22,7 +22,7 @@
             <div class="box box-primary">
 
               <div class="box-header with-border">
-                <h3><i class="fa fa-pencil"></i>  Editar Proveedor de Grua</h3>
+                <h3><i class="fa fa-pencil"></i>  Editar Proveedor de Grúa</h3>
           </div>
 
               <div class="box-body">
@@ -39,7 +39,7 @@
                         <input type="text" name="placa" value="{{old('placa', $proveedores->placa)}}" maxlength="6"class="form-control" onkeyup="mayus(this);">
                     </div>
                     <div class="form-group">
-                        <label for="descripcion">Descrpción:</label>
+                        <label for="descripcion">Descripción:</label>
                         <input type="text" name="descripcion" value="{{old('descripcion',$proveedores->descripcion)}}" class="form-control">
                     </div>
 

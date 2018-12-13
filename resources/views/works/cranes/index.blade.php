@@ -51,7 +51,7 @@
                       <a href="{{route('cranes.edit', $crane)}}" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <form method="POST" action="{{route('cranes.destroy', $crane)}}" style="display: inline">
                         {{csrf_field()}} {{method_field('DELETE')}}
-                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Esta seguro de querer Eliminar  este servicio?')">
+                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Está seguro de querer Eliminar  este servicio?')">
                             <i class="fa fa-trash"></i>
                         </button>
                       </form>

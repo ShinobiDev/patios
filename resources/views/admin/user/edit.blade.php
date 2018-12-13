@@ -49,7 +49,7 @@
                                 <input type="password" name="password_confirmation"  class="form-control" placeholder="Confirmar contraña">
                             </div>
 
-                            <button class="btn btn-primary btn-block"> <i class="fa fa-refresh"></i> Actulizar Usuario</button>
+                            <button class="btn btn-primary btn-block"> <i class="fa fa-refresh"></i> Actualizar Usuario</button>
 
                   </form>
               </div>

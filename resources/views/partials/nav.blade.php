@@ -1,5 +1,5 @@
 <ul class="sidebar-menu" data-widget="tree">
-  <li class="header">MENÚ DE NAVEGACION</li>
+  <li class="header">MENÚ DE NAVEGACIÓN</li>
 
   <li class="{{setActiveRoute('home')}}">
     <a href="{{route('home')}}">

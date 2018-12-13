@@ -10,7 +10,7 @@
 
     <ol class="breadcrumb">
       <li><a href="{{route('home')}}"><i class="fa fa-dashboard">  Inicio</i></a></li>
-      <li class="active">Historico de Reubicados</li>
+      <li class="active">Histórico de Reubicados</li>
     </0l>
 
 @endsection
@@ -19,7 +19,7 @@
 
   <div class="box box-primary">
     <div class="box-header">
-        <h3 class="box-title">Historico de Reubicados</h3>
+        <h3 class="box-title">Histórico de Reubicados</h3>
 
     </div>
     <div class="box-body">
@@ -28,8 +28,8 @@
             <tr>
               <th>Placa</th>
               <th>Patio</th>
-              <th>seccion</th>
-              <th>Numero</th>
+              <th>sección</th>
+              <th>Número</th>
               <th>Reubicado por</th>
               <th>Fecha Del Cambio</th>
             </tr>

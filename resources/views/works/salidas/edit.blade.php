@@ -35,7 +35,7 @@
                             <input type="text" name="servicio" value="{{old('servicio',$rate->servicio)}}" class="form-control">
                         </div>
 
-                          <button class="btn btn-primary btn-block"><i class="fa fa-refresh"></i> Actulizar</button>
+                          <button class="btn btn-primary btn-block"><i class="fa fa-refresh"></i> Actualizar</button>
 
                    </form>
 

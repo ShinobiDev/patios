@@ -29,7 +29,7 @@
           <thead>
             <tr>
               <th>Fecha ingreso</th>
-              <th>Numero de inventario</th>
+              <th>Número de inventario</th>
               <th>Placa</th>
               <th>Causal</th>
               <th>Tipo Infracción</th>

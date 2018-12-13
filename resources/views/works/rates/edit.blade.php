@@ -8,7 +8,7 @@
   <ol class="breadcrumb">
     <li><a href="{{route('home')}}"><i class="fa fa-dashboard">  Inicio</i></a></li>
     <li class="active"><a href="{{route('rates.index')}}">Servicios de Parqueadero</a></li>
-    <li class="active">Actulizar Servicios de Parqueadero</li>
+    <li class="active">Actualizar Servicios de Parqueadero</li>
   </0l>
 @endsection
 @section('content')

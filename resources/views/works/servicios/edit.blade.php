@@ -22,7 +22,7 @@
             <div class="box box-primary">
 
               <div class="box-header with-border">
-                <h3><i class="fa fa-pencil"></i>  Editar Servicios de Gruas</h3>
+                <h3><i class="fa fa-pencil"></i>  Editar Servicios de Grúas</h3>
           </div>
 
               <div class="box-body">
@@ -36,9 +36,9 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="grua">Servicio De Grua</label>
+                            <label for="grua">Servicio De Grúa</label>
                             <select class="form-control" name="crane_id">
-                                  <option value="">--Selecione un Servicio</option>
+                                  <option value="">--Seleccione un Servicio</option>
                                   @foreach ($cranes as $crane)
                                       <option value="{{$crane['id']}}">{{$crane['servicio']}}</option>
                                   @endforeach
@@ -47,14 +47,14 @@
                         <div class="form-group">
                             <label for="grua">Servicio De Parquadero</label>
                             <select class="form-control" name="rate_id">
-                                    <option value="">--Selecione un Servicio</option>
+                                    <option value="">--Seleccione un Servicio</option>
                                     @foreach ($rates as $rate)
                                       <option value="{{$rate['id']}}">{{$rate['servicio']}}</option>
                                     @endforeach
                             </select>
                         </div>
                               <div class="form-group">
-                                  <label for="val_grua">Valor Grua:</label>
+                                  <label for="val_grua">Valor Grúa:</label>
                                   <input type="text" name="val_grua" value="{{old('val_grua',$servicio->val_grua)}}" class="form-control">
                              </div>
 
@@ -65,7 +65,7 @@
 
                         </div>
 
-                          <button class="btn btn-primary btn-block"><i class="fa fa-plus"></i> Actualiza Tarifa</button>
+                          <button class="btn btn-primary btn-block"><i class="fa fa-plus"></i> Actualizar Tarifa</button>
 
                    </form>
 

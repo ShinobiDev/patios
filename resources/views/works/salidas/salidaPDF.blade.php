@@ -81,7 +81,7 @@
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 2px solid #000000" colspan=17 height="21" align="left" valign=top><b><font size=3 color="#000000">Nombre del infractor o propietario: {{$salida->nombre}}</font></b></td>
 		</tr>
 	<tr>
-		<td style="border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 2px solid #000000" colspan=17 height="21" align="left" valign=top><b><font size=3 color="#000000">Identificacion del infractor o propietario:  {{$salida->documento}}</font></b></td>
+		<td style="border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 2px solid #000000" colspan=17 height="21" align="left" valign=top><b><font size=3 color="#000000">Identificación del infractor o propietario:  {{$salida->documento}}</font></b></td>
 		</tr>
 	<tr>
 		<td style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 2px solid #000000; border-right: 1px solid #000000" height="16" align="center" bgcolor="#969696"><b><font size=3 color="#000000">PLACA</font></b></td>

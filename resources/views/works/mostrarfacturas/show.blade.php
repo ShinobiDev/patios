@@ -7,6 +7,8 @@
 
 @section('content')
 
+  @include('partials.success')
+
   <header class="clearfix">
       <div id="logo">
         <img src="{{asset('factura/logo.png')}}">

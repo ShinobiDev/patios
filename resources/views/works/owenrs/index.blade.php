@@ -34,7 +34,7 @@
               <th>Propietario o Infractor</th>
               <th>Identificación</th>
               <th>celular</th>
-              <th>Direccion</th>
+              <th>Dirección</th>
               <th>Email</th>
               <th style="width:150px;">Opciones</th>
             </tr>
@@ -54,7 +54,7 @@
 
                       <form method="POST" action="{{route('owenrs.destroy', $owenr)}}" style="display: inline">
                         {{csrf_field()}} {{method_field('DELETE')}}
-                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Esta seguro de quierer Eliminar  este Patio?')">
+                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Está seguro de quierer Eliminar  este Patio?')">
                             <i class="fa fa-trash"></i>
                         </button>
                       </form>

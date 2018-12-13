@@ -45,7 +45,7 @@
 
                       {{-- <form method="POST" action="{{route('sections.destroy', $section)}}" style="display: inline">
                         {{csrf_field()}} {{method_field('DELETE')}}
-                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Esta seguro de quierer Eliminar esta seccion del patio?')">
+                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Está seguro de quierer Eliminar esta seccion del patio?')">
                             <i class="fa fa-trash"></i>
                         </button>
                       </form> --}}

@@ -42,7 +42,7 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="mail">Correo Electronico</label>
+                            <label for="mail">Correo Electrónico</label>
                             <input type="mail" name="mail" value="{{old('mail',$owenr->mail)}}" class="form-control">
                         </div>
 
@@ -60,7 +60,7 @@
                              <input type="hidden" name="entries_id" value="{{old('direccion',$owenr->entry_id)}}" class="form-control">
                         </div>
 
-                          <button class="btn btn-primary btn-block"><i class="fa fa-refresh"></i> Actulizar Propietario</button>
+                          <button class="btn btn-primary btn-block"><i class="fa fa-refresh"></i> Actualizar Propietario</button>
 
                    </form>
 

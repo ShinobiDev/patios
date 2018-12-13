@@ -32,7 +32,7 @@
             <tr>
               <th>Item</th>
               <th>patio</th>
-              <th>Direccion</th>
+              <th>Dirección</th>
               <th>Teléfono</th>
               <th style="width:150px;">Opciones</th>
             </tr>
@@ -52,7 +52,7 @@
                     @role('Sub Admin')
                       <form method="POST" action="{{route('yards.destroy', $yard)}}" style="display: inline">
                         {{csrf_field()}} {{method_field('DELETE')}}
-                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Esta seguro de quierer Eliminar  este Patio?')">
+                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Está seguro de quierer Eliminar  este Patio?')">
                             <i class="fa fa-trash"></i>
                         </button>
                       </form>

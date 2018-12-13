@@ -88,7 +88,7 @@ class TransationController extends Controller
          }else{
            //dd("ee");
            //
-            return redirect()->back()->with('errores','este pago ya se habia registrado');
+            return redirect()->back()->with('errores','No se puede ingresar este pago ya se habia registrado,por favor verifica el # de pago de la entidad');
             
          }
          

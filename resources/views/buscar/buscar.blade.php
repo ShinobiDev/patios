@@ -55,7 +55,7 @@
         <div id="company text-center">
           <h2 class="name">ITTB-STB</h2>
           <div>Dirección: KR 27 # 27 - 50 </div>
-          <div>Telefono: 312 318 6927 </div>
+          <div>Teléfono: 312 318 6927 </div>
         </div>
           </div>
       </div>
@@ -70,7 +70,7 @@
 
 
                 <p>
-                     El vehículo de placas <span style="color:blue"><strong>{{$valor->placa}}</strong></span> se encuenta inmovilizado desde {{$valor->created_at}}
+                     El vehículo de placas <span style="color:blue"><strong>{{$valor->placa}}</strong></span> se encuentra inmovilizado desde {{$valor->created_at}}
                 </p>
           @endforeach
 

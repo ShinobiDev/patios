@@ -69,8 +69,8 @@
                     <option value="salida">Salida Vehiculos</option>
                     <option value="permanencia">Permanencia Vehiculos</option>
                     <option value="obligatorio">Tiempo Obligatorio</option>
-                    <option value="recaudo">Distribucion De recaudos</option>
-                    <option value="grua">Gruas</option>
+                    <option value="recaudo">Distribución De recaudos</option>
+                    <option value="grua">Grúas</option>
                 </select>
             </div>
 

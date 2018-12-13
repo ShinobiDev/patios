@@ -66,7 +66,7 @@
                           <input type="text" name="concepto" value="{{old('concepto')}}" class="form-control">
                       </div>--}}
                       <div class="form-group">
-                        <select class="form-control select2" name="forma_de_pago">
+                        <select class="form-control select2" name="forma_de_pago" required>
                           <option value="">--- seleccione tipo de pago ---</option>
                           <option value="Efectivo">Efectivo</option>
                           <option value="Consignacion Davivienda">Consignación Davivienda</option>
@@ -90,7 +90,7 @@
                         <input class="form-control" type="text" name="placa" value="{{$valor->placa}} " disabled>
                       </div>
                       <div class="form-group">
-                        <select class="form-control select2" name="estado">
+                        <select class="form-control select2" name="estado" required>
                           <option value="">--- seleccione estado Recibo ---</option>
                           <option value="Generado">Generado</option>
                           <option value="Transito">Tránsito</option>

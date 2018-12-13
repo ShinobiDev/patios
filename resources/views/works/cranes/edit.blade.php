@@ -7,8 +7,8 @@
 
   <ol class="breadcrumb">
     <li><a href="{{route('home')}}"><i class="fa fa-dashboard">  Inicio</i></a></li>
-    <li class="active"><a href="{{route('cranes.index')}}">Servicios de Parqueadero</a></li>
-    <li class="active">Actulizar Servicios de Parqueadero</li>
+    <li class="active"><a href="{{route('cranes.index')}}">Servicio de Parqueadero</a></li>
+    <li class="active">Actualizar Servicio de Parqueadero</li>
   </0l>
 @endsection
 @section('content')
@@ -22,7 +22,7 @@
             <div class="box box-primary">
 
               <div class="box-header with-border">
-                <h3><i class="fa fa-pencil"></i>  Editar Servicios de Parqueadero</h3>
+                <h3><i class="fa fa-pencil"></i>  Editar Servicio de Parqueadero</h3>
           </div>
 
               <div class="box-body">

@@ -34,7 +34,7 @@
               <th>Año</th>
               <th>Nombre del Servicio</th>
               <th>Valor</th>
-              <th>Tipo vehiculo</th>
+              <th>Tipo vehículo</th>
               <th style="width:100px;">Opciones</th>
             </tr>
           </thead>
@@ -52,7 +52,7 @@
                       <a href="{{route('rates.edit', $rate)}}" class="btn btn-primary"><i class="fa fa-edit"></i></a>
                       <form method="POST" action="{{route('rates.destroy', $rate)}}" style="display: inline">
                         {{csrf_field()}} {{method_field('DELETE')}}
-                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Esta seguro de querer Eliminar  este servicio?')">
+                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Está seguro de querer Eliminar  este servicio?')">
                             <i class="fa fa-trash"></i>
                         </button>
                       </form>

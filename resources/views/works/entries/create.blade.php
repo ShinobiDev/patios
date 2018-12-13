@@ -76,7 +76,7 @@
                           <div class="form-group">
                               <label for="nombre">Infracción</label><br>
                               <select class="form-control select2" name="infraccion_id" id="infracion">
-                                  <option value="0" selected>--- Selecione Propi/Infractor ---</option>
+                                  <option value="0" selected>--- Seleccione Propi/Infractor ---</option>
                                   @foreach ($infraccions as $infraccion)
                                     <option value="{{$infraccion->id}}">{{$infraccion->codigo}}</option>
                                   @endforeach
@@ -97,7 +97,7 @@
                         </div>
                         <div class="form-group">
                             <label for="marca">Marca del Vehículo</label>
-                            <select class="form-control select2" name="marca">
+                            <select class="form-control select2" name="marca" required>
                                 <option value="">---Seleccione una Opción---</option>
                                 @foreach ($marcas as $marca)
                                     <option value="{{$marca->marca}}">{{$marca->marca}}</option>
@@ -107,18 +107,18 @@
                         </div>
                         <div class="form-group">
                             <label for="servicio">Tipo de servicio</label>
-                            <select class="form-control" name="servicio">
+                            <select class="form-control" name="servicio" required>
                                   <option value="">---Seleccione Servicio---</option>
                                   <option value="Diplomado">Diplomado</option>
                                   <option value="Oficial">Oficial</option>
                                   <option value="Privado">Particular</option>
-                                  <option value="Publico">Publico</option>
+                                  <option value="Publico">Público</option>
                                   <option value="extrangero">EspecialRNMA</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="email">Clase de vehículo:</label>
-                            <select class="form-control select2" id="tipo" name="tipo">
+                            <select class="form-control select2" id="tipo" name="tipo" required>
                                   <option value="">---Seleccione una Opción---</option>
                                   @foreach ($tipos as $tipo)
                                     <option value="{{$tipo->tipo}}">{{$tipo->tipo}}</option>

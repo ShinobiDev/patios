@@ -32,9 +32,9 @@
             <tr>
               <th>Item</th>
               <th>Año</th>
-              <th>N. Serv Grua </th>
+              <th>N. Serv Grúa </th>
               <th>N. Serv Parqueadero</th>
-              <th>Val. Grua</th>
+              <th>Val. Grúa</th>
               <th>Val Parqueadero</th>
               <th style="width:100px;">Opciones</th>
             </tr>
@@ -54,7 +54,7 @@
 
                       <form method="POST" action="{{route('servicios.destroy', $servicio)}}" style="display: inline">
                         {{csrf_field()}} {{method_field('DELETE')}}
-                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Esta seguro de querer Eliminar  este servicio?')">
+                        <button class="btn btn-danger" name="button" onclick="return confirm('¿Está seguro de querer Eliminar  este servicio?')">
                             <i class="fa fa-trash"></i>
                         </button>
                       </form>

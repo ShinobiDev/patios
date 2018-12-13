@@ -22,7 +22,7 @@
             <div class="box box-primary">
 
               <div class="box-header with-border">
-                <h3><i class="fa fa-pencil"></i>  Crear Proveedor de Gruas</h3>
+                <h3><i class="fa fa-pencil"></i>  Crear Proveedor de Grúas</h3>
           </div>
 
               <div class="box-body">
@@ -35,7 +35,7 @@
                             <input type="text" name="proveedor" value="{{old('proveedor')}}" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="placa">Placa Grua:</label>
+                            <label for="placa">Placa Grúa:</label>
                             <input type="text" name="placa" value="{{old('placa')}}" maxlength="6"class="form-control" onkeyup="mayus(this);">
                         </div>
                         <div class="form-group">

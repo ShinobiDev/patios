@@ -32,7 +32,7 @@
                     {{ method_field('PUT') }}
 
                         <div class="form-group">
-                            <label for="seccion">seccion:</label>
+                            <label for="seccion">Seccion:</label>
                             <input type="text" name="seccion" value="{{old('seccion',$section->seccion)}}" class="form-control">
                         </div>
                         <div class="form-group">
@@ -41,7 +41,7 @@
                             <input type="hidden" name="yard_id" value="{{$section->yard_id}}">
                         </div>
 
-                          <button class="btn btn-primary btn-block"><i class="fa fa-refresh"></i> Actualizar sección</button>
+                          <button class="btn btn-primary btn-block"><i class="fa fa-refresh"></i> Actualizar Sección</button>
 
                    </form>
 

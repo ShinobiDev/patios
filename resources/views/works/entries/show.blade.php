@@ -125,7 +125,7 @@
             <div class="box box-primary">
 
                 <div class="box-header with-border text-center">
-                    <h3 class="box-title text-blue"><b>Asignar Ubicación del parqueadero</b> </h3>
+                    <h3 class="box-title text-blue"><b>Asignar ubicación del parqueadero</b> </h3>
                 </div>
 
                 <div class="box-body">
@@ -207,7 +207,7 @@
                          <b>Correo:</b> <a class="pull-right">{{$owenr->mail}}</a>
                        </li>
                        <li class="list-group-item">
-                         <b>Dirección</b> <a class="pull-right">{{$owenr->direccion}}</a>
+                         <b>Dirección:</b> <a class="pull-right">{{$owenr->direccion}}</a>
                        </li>
 
                  </ul>
@@ -218,7 +218,7 @@
                    <div class="form-group">
                        <label for="nombre">Infractor / Propietario:</label>
                        <select class="form-control" name="tipo_propi">
-                         <option value="">---Seleccione opcion</option>
+                         <option value="">---Seleccione opción---</option>
                          <option value="Infractor">Infractor</option>
                          <option value="Propietario">Propietario</option>
                        </select>
@@ -239,12 +239,12 @@
                            <input type="text" name="celular" value="{{old('celular')}}" class="form-control">
                        </div>
                        <div class="form-group">
-                           <label for="mail">Correo Electrónico</label>
+                           <label for="mail">Correo Electrónico:</label>
                            <input type="mail" name="mail" value="{{old('mail')}}" class="form-control">
                        </div>
 
                        <div class="form-group">
-                           <label for="direccion">Dirección Residencia</label>
+                           <label for="direccion">Dirección Residencia:</label>
                            <input type="text" name="direccion" value="{{old('direccion')}}" class="form-control">
                        </div>
 
@@ -321,6 +321,7 @@ $('#motos').css("display", "none");
         $(".btnbueno").addClass('btn-success')
         $(".btnregular").removeClass('btn-success')
         $(".btnmalo").removeClass('btn-success')
+        $(".btnna").removeClass('btn-success')
 
 
     });
@@ -329,6 +330,7 @@ $('#motos').css("display", "none");
         $(".btnregular").addClass('btn-success')
         $(".btnbueno").removeClass('btn-success')
         $(".btnmalo").removeClass('btn-success')
+        $(".btnna").removeClass('btn-success')
 
     });
     $(".btnmalo").click(function(){
@@ -336,6 +338,7 @@ $('#motos').css("display", "none");
         $(".btnmalo").addClass('btn-success')
         $(".btnbueno").removeClass('btn-success')
         $(".btnregular").removeClass('btn-success')
+        $(".btnna").removeClass('btn-success')
     });
 
     $(".btnbuenos").click(function(){
@@ -343,6 +346,7 @@ $('#motos').css("display", "none");
         $(".btnbuenos").addClass('btn-success')
         $(".btnregulars").removeClass('btn-success')
         $(".btnmalos").removeClass('btn-success')
+        $(".btnna").removeClass('btn-success')
 
 
     });
@@ -351,6 +355,7 @@ $('#motos').css("display", "none");
         $(".btnregulars").addClass('btn-success')
         $(".btnbuenos").removeClass('btn-success')
         $(".btnmalos").removeClass('btn-success')
+        $(".btnna").removeClass('btn-success')
 
     });
     $(".btnmalos").click(function(){
@@ -358,7 +363,16 @@ $('#motos').css("display", "none");
         $(".btnmalos").addClass('btn-success')
         $(".btnbuenos").removeClass('btn-success')
         $(".btnregulars").removeClass('btn-success')
+        $(".btnna").removeClass('btn-success')
     });
+    $(".btnna").click(function(){
+        $(".noaplica").prop("checked", true);
+        $(".btnna").addClass('btn-success')
+        $(".btnbuenos").removeClass('btn-success')
+        $(".btnregulars").removeClass('btn-success')
+        $(".btnmalos").removeClass('btn-success')
+    });
+
 
 
 });
@@ -375,6 +389,8 @@ $('#motos').css("display", "none");
         $(".btnbuenosventana").addClass('btn-success')
         $(".btnregularsventana").removeClass('btn-success')
         $(".btnmalosventana").removeClass('btn-success')
+        $(".btnnoaplicaventana").removeClass('btn-success')
+        
 
       });
       $(".btnregularventana").click(function(){
@@ -382,6 +398,7 @@ $('#motos').css("display", "none");
             $(".btnregularsventana").addClass('btn-success')
             $(".btnbuenosventana").removeClass('btn-success')
             $(".btnmalosventana").removeClass('btn-success')
+            $(".btnnoaplicaventana").removeClass('btn-success')
 
       });
       $(".btnmaloventana").click(function(){
@@ -389,7 +406,16 @@ $('#motos').css("display", "none");
             $(".btnmalosventana").addClass('btn-success')
             $(".btnbuenosventana").removeClass('btn-success')
             $(".btnregularsventana").removeClass('btn-success')
+            $(".btnnoaplicaventana").removeClass('btn-success')
       });
+      $(".btnnoaplicaventana").click(function(){
+            $(".noaplica").prop("checked", true);
+            $(".btnnoaplicaventana").addClass('btn-success')
+            $(".btnbuenosventana").removeClass('btn-success')
+            $(".btnregularsventana").removeClass('btn-success')
+            $(".btnmalosventana").removeClass('btn-success')
+      });
+      
   });
 
 </script>

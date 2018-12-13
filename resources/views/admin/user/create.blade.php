@@ -49,7 +49,7 @@
                             @include('admin.permissions.option',['model' => $user])
                         </div>
 
-                          <button class="btn btn-primary btn-block"><i class="fa fa-plus"></i> Crear Usuaraio</button>
+                          <button class="btn btn-primary btn-block"><i class="fa fa-plus"></i> Crear Usuario</button>
 
                    </form>
 
