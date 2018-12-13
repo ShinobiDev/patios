@@ -105,7 +105,7 @@ class ServicioController extends Controller
         ]);
 
       $servicio->update($data);
-       return redirect()->route('servicios.index')->with('success','La Tarifa se  actulizado correctamente');;
+       return redirect()->route('servicios.index')->with('success','La Tarifa se  actualizado correctamente');;
     }
 
     /**
@@ -118,6 +118,6 @@ class ServicioController extends Controller
     {
         $servicio->delete();
 
-        return redirect()->route('servicios.index')->with('success','Tarefa se Elimino correctamente');
+        return redirect()->route('servicios.index')->with('success','Tarefa se elimino correctamente');
     }
 }

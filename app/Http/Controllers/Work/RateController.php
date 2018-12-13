@@ -114,7 +114,7 @@ class RateController extends Controller
               $rate->update($data);
 
 
-            return redirect()->route('rates.index')->with('success','Servicio fue Actulizado correctamente');
+            return redirect()->route('rates.index')->with('success','Servicio fue actualizado correctamente');
     }
 
     /**

@@ -291,7 +291,7 @@ class InvoceController extends Controller
         ]);
 
 
-        return redirect()->route('invoces.index')->with('success', 'Se a cambiado el estado de la factura correctamente');
+        return redirect()->route('invoces.index')->with('success', 'Se ha cambiado el estado de la factura correctamente');
     }
 
     /**

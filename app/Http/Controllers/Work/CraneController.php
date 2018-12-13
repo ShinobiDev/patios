@@ -125,7 +125,7 @@ class CraneController extends Controller
             $crane->update($data);
 
 
-          return redirect()->route('cranes.index')->with('success','Servicio fue Actulizado correctamente');
+          return redirect()->route('cranes.index')->with('success','Servicio fue actualizado correctamente');
 
 
     }

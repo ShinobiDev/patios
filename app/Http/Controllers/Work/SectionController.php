@@ -73,7 +73,7 @@ class SectionController extends Controller
 
           }
 
-        return back()->with('success','Se a asignado la sección correctamente al patio');
+        return back()->with('success','Se ha asignado la sección correctamente al patio');
     }
 
     /**
@@ -123,7 +123,7 @@ class SectionController extends Controller
 
               $section->update($data);
 
-            return redirect()->route('sections.index')->with('success','Se a actulizado la sección correctamente al patio');
+            return redirect()->route('sections.index')->with('success','Se ha actulizado la sección correctamente al patio');
     }
 
     /**

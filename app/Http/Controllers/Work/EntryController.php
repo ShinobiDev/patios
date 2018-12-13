@@ -110,7 +110,7 @@ class EntryController extends Controller
 
 
 
-        return redirect()->route('entries.show',$entries->id)->with('success', 'Se ha ingresado correctamente el Vehículo ');
+        return redirect()->route('entries.show',$entries->id)->with('success', 'Se ha ingresado correctamente el vehículo ');
 
       }
 
@@ -118,7 +118,7 @@ class EntryController extends Controller
 
 
 
-        return redirect()->route('entries.show',$entries->id)->with('success', 'Se ha ingresado correctamente el Vehículo ');
+        return redirect()->route('entries.show',$entries->id)->with('success', 'Se ha ingresado correctamente el vehículo ');
 
     }
 

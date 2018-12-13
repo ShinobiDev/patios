@@ -100,7 +100,7 @@ class ReportController extends Controller
 
 
               if ($vista->count()==0) {
-                  return redirect()->route('reports.index')->with('success', 'No hay registros de Permanencia en este rango de fechas');
+                  return redirect()->route('reports.index')->with('success', 'No hay registros de permanencia en este rango de fechas');
               }
 
                 return view('works.reports.permanencia',compact('vista'));
@@ -136,7 +136,7 @@ class ReportController extends Controller
                 // dd($vista);
 
               if ($vista->count()==0) {
-                  return redirect()->route('reports.index')->with('success', 'No hay registros De Obligatoriedad  en este rango de fechas');
+                  return redirect()->route('reports.index')->with('success', 'No hay registros De obligatoriedad  en este rango de fechas');
               }
 
                 return view('works.reports.obligatorio',compact('vista'));
@@ -159,7 +159,7 @@ class ReportController extends Controller
                         ->get();
               // dd($vista);
               if ($vista->count()==0) {
-                  return redirect()->route('reports.index')->with('success', 'No hay registros De Recaudos en este rango de fechas');
+                  return redirect()->route('reports.index')->with('success', 'No hay registros de recaudos en este rango de fechas');
               }
 
                 return view('works.reports.recaudo',compact('vista'));

@@ -120,7 +120,7 @@ class Proveedor_gruaController extends Controller
 
 
 
-        return redirect()->route('proveedores.index')->with('success', 'Se a realizado la Reubicacion Correctamente');
+        return redirect()->route('proveedores.index')->with('success', 'Se ha realizado la reubicación correctamente');
 
     }
 

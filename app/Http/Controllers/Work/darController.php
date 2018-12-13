@@ -52,7 +52,7 @@ class darController extends Controller
 
       $entry = Entry::create($request->all());
 
-      return back()->with('success','Se ha ingresado la Placa correctamente al patio');
+      return back()->with('success','Se ha ingresado la placa correctamente al patio');
     }
 
     /**

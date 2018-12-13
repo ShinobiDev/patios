@@ -145,7 +145,7 @@ class EstadisticoController extends Controller
 
 
                if ($vista->count()==0) {
-                   return redirect()->route('estadisticos.index')->with('success', 'No hay registros De Obligatoriedad  en este rango de fechas');
+                   return redirect()->route('estadisticos.index')->with('success', 'No hay registros de obligatoriedad  en este rango de fechas');
                }
 
                  return view('works.estadisticos.obligatorio',compact('vista'));
