@@ -70,7 +70,7 @@ class RolesController extends Controller
                 $role->givePermissionTo($request->permissions);
             }
 
-            return redirect()->route('roles.index')->with('success','El role fue creado correctamente');
+            return redirect()->route('roles.index')->with('success','El rol fue creado correctamente');
     }
 
     /**

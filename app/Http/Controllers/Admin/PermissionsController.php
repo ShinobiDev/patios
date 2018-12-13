@@ -89,7 +89,7 @@ class PermissionsController extends Controller
 
             $permission->update($data);
 
-            return redirect()->route('permissions.index')->with('success','Permiso actulizado correctamente');
+            return redirect()->route('permissions.index')->with('success','Permiso actualizado correctamente');
     }
 
     /**

@@ -80,7 +80,7 @@ class UserRolesController extends Controller
         }
 
 
-        return back()->with('success', 'los Roles acutalizado Correctamente');
+        return back()->with('success', 'los roles fueron acutalizados correctamente');
     }
 
     /**
