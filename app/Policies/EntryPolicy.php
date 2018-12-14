@@ -29,7 +29,7 @@ class EntryPolicy
      */
     public function view(User $user, Entry $entry)
     {
-        return $user->hasPermissionTo('Ver Entradas');
+        return  $user->hasPermissionTo('Ver Entradas');
     }
 
     /**

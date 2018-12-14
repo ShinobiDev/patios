@@ -78,6 +78,7 @@ Route::group([
     Route::resource('mostrarfacturas','MostrarFacturaController');
     Route::get('/json-cranes','Clase_vehiculoController@gruas');
     Route::get('/json-salidas','SalidaController@salidas');
+    Route::get('/json-propietario','OwenrController@buscar_propietario');
     Route::post('transacciones','TransationController@guardar')->name('transaccion.guardar');
 });
 

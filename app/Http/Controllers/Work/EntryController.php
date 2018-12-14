@@ -155,6 +155,10 @@ class EntryController extends Controller
                    ->where('owenrs.entries_id',$entry_id)
                    ->get();
 
+        $list_owenrs = DB::table('owenrs')
+                       ->select('documento',DB::raw('count(id)')) 
+                       ->groupBy('owenrs.documento') 
+                       ->get();                   
 
         $rate = $entry['rate_id'];
 
@@ -169,7 +173,8 @@ class EntryController extends Controller
 
         return view('works.entries.show',compact('entry'))->with('yards', $yards)->with('asignars', $asignars)
                                                           ->with('owenrs', $owenrs)->with('inventaries', $inventaries)
-                                                          ->with('dato_rate', $dato_rate);
+                                                          ->with('dato_rate', $dato_rate)
+                                                          ->with('list_own',$list_owenrs);
 
     }
 

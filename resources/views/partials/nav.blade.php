@@ -1,5 +1,5 @@
 <ul class="sidebar-menu" data-widget="tree">
-  <li class="header">MENÚ DE NAVEGACIÓN</li>
+  <li class="header">MENÚ DE NAVEGACION</li>
 
   <li class="{{setActiveRoute('home')}}">
     <a href="{{route('home')}}">
@@ -120,6 +120,15 @@
       <i class="fa fa-angle-left pull-right"></i>
     </span>
   </a>
+  @role('Ingreso')
+
+    <li class="{{setActiveRoute(['entries.index','entries.create','entries.edit','entries.show','daringreso.index'])}}">
+      <a href="{{route('daringreso.index')}}">
+        <i class="fa fa-car"></i>
+        <span>Dar Ingreso</span>
+      </a>
+    </li>
+  @endrole 
   @can ('view', new \App\Entry)
   <ul class="treeview-menu">
 {{-- @role('Ingreso') --}}

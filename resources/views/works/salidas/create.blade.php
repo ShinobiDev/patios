@@ -78,23 +78,31 @@
 
 @endsection
 @section('scripts')
-  <script>
-
-  $('#entries_id').on('change', function(e) {
-      console.log(e);
-      var entries_id =e.target.value;
-      $.get('/patios/json-salidas?entries_id='+entries_id, function(data){
+  <script type="text/javascript">
+  
+  $(document).ready(function() {
+      $.get('{{config("app.url")}}/json-salidas?entries_id='+entries_id, function(data){
         $('#documento').empty();
         $('#documento').append('<option value="0" disable="true" selected="true">====Seleccione Placa====</option>');
+      });   
+      $('#entries_id').on('change', function(e) {
+        console.log(e);
+          var entries_id =e.target.value;
+          $.get('{{config("app.url")}}/json-salidas?entries_id='+entries_id, function(data){
+            $('#documento').empty();
+            $('#documento').append('<option value="0" disable="true" selected="true">====Seleccione Placa====</option>');
 
 
-        $.each(data, function(index, owenrsObj){
-            console.log(owenrsObj.nombre)
-            $('#documento').append('<option value="'+owenrsObj.id+'">'+owenrsObj.nombre+' --  CC. '+owenrsObj.documento+'</option>')
-        });
+            $.each(data, function(index, owenrsObj){
+                console.log(owenrsObj.nombre)
+                $('#documento').append('<option value="'+owenrsObj.id+'">'+owenrsObj.nombre+' --  CC. '+owenrsObj.documento+'</option>')
+            });
 
+          });
       });
-  });
+   
+   }); 
+
 
   </script>
 @endsection

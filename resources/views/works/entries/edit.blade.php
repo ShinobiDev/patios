@@ -32,7 +32,7 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Causal de Inmovilización:</label>
-                            <select class="form-control " name='causal' id="causal" required>
+                            <select class="form-control select2 " name='causal' id="causal" required>
                               <option value="">---Seleccione una Opción---</option>
                               <option value="Accidente">Accidente</option>
                               <option value="Comparendo">Comparendo</option>
@@ -127,7 +127,7 @@
                         </div> --}}
                         <div class="form-group">
                             <label for="rate_id">Servicio Parqueadero</label>
-                            <select class="form-control select2" name="rate_id" id="rates">
+                            <select class="form-control select2" name="rate_id" id="rates" required>
                                   <option value="">---Seleccione una Opción---</option>
                                   {{-- @foreach ($rates as $rate)
                                       <option value="{{$rate['id']}}">{{$rate['servicio']}}</option>
@@ -136,7 +136,7 @@
                         </div>
                         <div class="form-group">
                             <label for="crane_id">Servicio Grúa</label>
-                            <select class="form-control select2" name="crane_id" id="cranes">
+                            <select class="form-control select2" name="crane_id" id="cranes" required>
                                   <option value="">---Seleccione una Opción---</option>
                                 {{-- @foreach ($cranes as $crane)
                                   <option value="{{$crane['id']}}">{{$crane['servicio']}}</option>

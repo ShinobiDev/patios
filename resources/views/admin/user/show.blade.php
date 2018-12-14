@@ -4,7 +4,7 @@
 @section('content')
 
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div class="box-body box-profile">
             <img class="profile-user-img img-responsive img-circle" src="{{asset('img/logoAvatar.png')}}" alt="{{$user->name}}">
 

@@ -119,7 +119,7 @@
                     @role('Admin')
                       <form method="POST" action="{{route('entries.destroy', $entry)}}" style="display: inline">
                         {{csrf_field()}} {{method_field('DELETE')}}
-                        <button class="btn btn-xs btn-danger" name="button" onclick="return confirm('¿Esta seguro de querer Eliminar  este usuraio?')">
+                        <button class="btn btn-xs btn-danger" name="button" onclick="return confirm('¿Está seguro de querer Eliminar  este usuario?')">
                             <i class="fa fa-times"></i>
                         </button>
                       </form>

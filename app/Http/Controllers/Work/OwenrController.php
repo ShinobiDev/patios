@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Work;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\DB;
 use App\Owenr;
 use App\Entry;
 
@@ -51,13 +53,14 @@ class OwenrController extends Controller
         $data = $request->validate([
             'nombre'=>'required|min:4|max:20',
             'tipo_propi' => 'required',
-            'documento'=>'required|unique:owenrs|min:5|max:20',
-            // 'celular'=>'required',
-             'mail'=>'required|unique:owenrs',
-            // 'direccion'=>'required',
+            'documento'=>'required|min:5|max:20',
+            //'documento'=>'required|unique:owenrs|min:5|max:20',
+            //'celular'=>'required',
+            //'mail'=>'unique:owenrs',
+            //'direccion'=>'required',
             'entries_id'=>'required',
         ]);
-
+        //dd($data);
           $data['celular'] = $request->celular;
           $data['mail'] = $request->mail;
           $data['direccion'] = $request->celular;
@@ -76,7 +79,7 @@ class OwenrController extends Controller
     public function show($id)
     {
         $owenr = new Owenr;
-        $this->authorize('view', $owenr);
+        //$this->authorize('view', $owenr);
     }
 
     /**
@@ -135,4 +138,13 @@ class OwenrController extends Controller
       $owenr->delete($id);
       return redirect()->route('owenrs.index')->with('success', 'El registro fue borrado correctamente');
     }
+    public function buscar_propietario(){
+      $cc=Input::get('doc');
+      //dd($cc);
+      $own=Owenr::where('documento',$cc)->first();
+      //dd($own);
+      return response()->json($own);
+
+    }
+
 }

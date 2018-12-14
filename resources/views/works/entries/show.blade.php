@@ -212,18 +212,23 @@
 
                  </ul>
                @empty
-                 <form method="POST" action="{{route('owenrs.store')}}">
+                <div class="form-group">
+                          
+                          <b></b>&nbsp; &nbsp; <input id="" type="radio" name="propietario" value="crear" checked>Crear                           
+                          <b></b> &nbsp; &nbsp; <input id="" type="radio" name="propietario" value="buscar" >Buscar
+                          &nbsp; &nbsp;
+                </div>
+                 <form method="POST" action="{{route('owenrs.store')}}" id="formCrear">
                    {{csrf_field()}}
-
-                   <div class="form-group">
-                       <label for="nombre">Infractor / Propietario:</label>
-                       <select class="form-control" name="tipo_propi">
-                         <option value="">---Seleccione opción---</option>
-                         <option value="Infractor">Infractor</option>
-                         <option value="Propietario">Propietario</option>
-                       </select>
-                   </div>
-
+                        
+                        <div class="form-group">
+                           <label for="nombre">Infractor / Propietario:</label>
+                           <select class="form-control select2" name="tipo_propi">
+                             <option value="">---Seleccione opción---</option>
+                             <option value="Infractor">Infractor</option>
+                             <option value="Propietario">Propietario</option>
+                           </select>
+                       </div>
                        <div class="form-group">
                            <label for="nombre">Nombre Propietario:</label>
                            <input type="text" name="nombre" value="{{old('nombre')}}" class="form-control">
@@ -246,6 +251,54 @@
                        <div class="form-group">
                            <label for="direccion">Dirección Residencia:</label>
                            <input type="text" name="direccion" value="{{old('direccion')}}" class="form-control">
+                       </div>
+
+                       <div class="form-group">
+                            <input type="hidden" name="entries_id" value="{{ $entry->id }}" class="form-control">
+                       </div>
+
+                         <button class="btn btn-primary btn-block"><i class="fa fa-user-plus"></i> Crear Propietario/Infractor</button>
+
+                </form>
+                <form method="POST" action="{{route('owenrs.store')}}" id="formCrear1">
+                   {{csrf_field()}}
+                        
+                        <div class="form-group">
+                           <label for="nombre">Infractor / Propietario:</label>
+                           <select class="form-control select2" name="tipo_propi">
+                             <option value="">---Seleccione opción---</option>
+                             <option value="Infractor">Infractor</option>
+                             <option value="Propietario">Propietario</option>
+                           </select>
+                       </div>
+                       
+
+                       <div class="form-group">
+                           <label for="documento">Documento de Identidad:</label>
+                           <select id="selPropietario" class="form-control select2" name="documento">
+                             <option value="">--Selecciona una opción--</option>
+                             @foreach($list_own as $lo)
+                                <option value="{{$lo->documento}}">{{$lo->documento }}</option>
+                             @endforeach
+                           </select>
+                       </div>
+                       <div class="form-group">
+                           <label for="nombre">Nombre Propietario:</label>
+                           <input type="text" id="txtnombrepropietario" name="nombre" value="{{old('nombre')}}" class="form-control">
+                       </div>
+
+                       <div class="form-group">
+                           <label for="telefono">Número Celular:</label>
+                           <input type="text" id="txtcelpropietario" name="celular" value="{{old('celular')}}" class="form-control">
+                       </div>
+                       <div class="form-group">
+                           <label for="mail">Correo Electrónico:</label>
+                           <input type="mail" id="txtmailpropietario" name="mail" value="{{old('mail')}}" class="form-control">
+                       </div>
+
+                       <div class="form-group">
+                           <label for="direccion">Dirección Residencia:</label>
+                           <input type="text" id="txtdirpropietario" name="direccion" value="{{old('direccion')}}" class="form-control">
                        </div>
 
                        <div class="form-group">
@@ -305,16 +358,30 @@ $(document).ready(function() {
 
 $('#carros').css("display", "none");
 $('#motos').css("display", "none");
+$('#formCrear1').css("display", "none");
   $("input[name=tipo]").change(function () {
-    if($(this).val()=='carro'){
+      if($(this).val()=='carro'){
         $('#motos').css("display", "none");
         $('#carros').css("display", "block");
       }else{
         $('#motos').css("display", "block");
         $('#carros').css("display", "none");
       }
+      
+
     });
 
+$("input[name=propietario]").change(function () {
+      if($(this).val()=='crear'){
+          $('#formCrear1').css("display", "none");
+          $('#formCrear').css("display", "block");
+      }else if($(this).val()=='buscar'){
+          $('#formCrear').css("display", "none");
+          $('#formCrear1').css("display", "block");
+      }
+});
+  
+    
 
     $(".btnbueno").click(function(){
         $(".bueno").prop("checked", true);
@@ -373,13 +440,9 @@ $('#motos').css("display", "none");
         $(".btnmalos").removeClass('btn-success')
     });
 
-
+  
 
 });
-
-
-
-
 </script>
 <script type="text/javascript">
 
@@ -414,6 +477,20 @@ $('#motos').css("display", "none");
             $(".btnbuenosventana").removeClass('btn-success')
             $(".btnregularsventana").removeClass('btn-success')
             $(".btnmalosventana").removeClass('btn-success')
+      });
+
+
+      $('#selPropietario').on('change', function(e) {
+              console.log(e);
+              var cc =e.target.value;
+              $.get('{{config("app.url")}}/json-propietario?doc='+cc, function(data){
+                console.log(data);
+                $('#txtnombrepropietario').val(data.nombre);
+                $('#txtcelpropietario').val(data.celular);
+                $('#txtmailpropietario').val(data.mail);
+                $('#txtdirpropietario').val(data.direccion);
+                
+              });
       });
       
   });

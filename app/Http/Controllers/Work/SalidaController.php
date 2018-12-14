@@ -68,7 +68,7 @@ class SalidaController extends Controller
         $entries = Owenr::where('entries_id',$entries_id)
                          ->get();
 
-            return response()->json($entries);
+        return response()->json($entries);
 
       }
 
